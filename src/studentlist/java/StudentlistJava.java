@@ -55,7 +55,19 @@ public class StudentlistJava {
         }
         
         else if(option==3){
-            
+            File file = new File("src\\studentlist\\java\\student.txt");
+            BufferedReader br = null;
+            try {
+                br = new BufferedReader(new FileReader(file));
+            } catch (FileNotFoundException ex) {
+                System.out.println("Exception : "+ex.toString());
+            }
+            String st;
+            int count=0;
+            while((st=br.readLine())!= null){
+                count=count+1;
+            }
+            System.out.println("Number of student : "+count);
         }
         
         else if(option==4){
