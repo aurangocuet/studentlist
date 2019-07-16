@@ -11,4 +11,5 @@ package studentlist.java;
  */
 public class Constants {
     public static String TEXT_FILE_NAME = "src\\studentlist\\java\\student.txt";
+    public static String EMPTY_STRING = "";
 }
